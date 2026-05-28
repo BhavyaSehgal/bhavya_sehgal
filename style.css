@@ -1,425 +1,412 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
-    height: 100%;
 }
+
 body {
-    
-    font-family:papyrus,fantasy;
-    color: #071952;
-    top: 0;
-    }
-    .odd-section{
-        background-color: #272343;
-        color: #FFFFFF;
-        padding-bottom: 50px;
-
-    }
-    .even-section{
-        background-color: #FCFAEE;
-        color: #00235B;
-        padding-bottom: 50px;
-
-
-    }
-  
-h2{
-    margin: 0;
-    font-family:papyrus,fantasy;
-    font-weight: bolder;
-    text-align: center;
-    padding: 30px 100px;
-    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
 }
 
+/* =========================
+   NAVBAR
+========================= */
 
 .custom-navbar {
-position: fixed;
+    position: fixed;
+    top: 0;
     width: 100%;
-    /* color:; */
-    background-color:  rgb(0,0,0,0.5);
-    padding: 30px 0;
-    transition: background-color 0.3s ease;
-    z-index: 1;
+    padding: 18px 40px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-nav {
-
+.custom-navbar ul {
     display: flex;
     justify-content: center;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-}
-
-
-.link {
-    margin: 0 15px !important;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
 }
 
 .nav-link {
-    font-weight: bold;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 35px;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    position: relative;
 }
 
-.link .nav-link:hover {
-    color: #FFB1B1; /* Change to your hover color */
-font-style: italic;}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.nav-link:hover {
+    color: #38bdf8;
 }
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 120px 8% 80px;
+}
+
+.odd-section {
+    background-color: #0f172a;
+    color: white;
+}
+
+.even-section {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* =========================
+   HEADINGS
+========================= */
 
 h1 {
-    position: relative;
-    font-family: Papyrus,fantasy;
+    font-size: 4rem;
     text-align: center;
-    font-size: 100px;
-    opacity: 0;
-    animation: slideIn 1s forwards;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
-h3{
-    font-size: 25px;
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
 }
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
+
+.sub-headings {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: inherit;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-section h2 {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #cbd5e1;
+}
+
+/* =========================
+   ICONS
+========================= */
 
 .icons {
     display: flex;
     justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.icons a {
+    color: white;
+    font-size: 2rem;
+    transition: 0.3s ease;
+}
+
+.icons a:hover {
+    color: #38bdf8;
+    transform: translateY(-4px);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.flow-text {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.left-list {
     margin-top: 20px;
-    padding-bottom: 50px;
+    padding-left: 30px;
 }
 
-.icons li {
-    margin: 0 15px;
-    opacity: 0; /* Start invisible */
-    animation: slideIn 0.8s forwards; /* Bounce in effect */
+.left-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
-/* Add delay to each icon for staggered effect */
-.icons li:nth-child(1) {
-    animation-delay: 0.5s;
-}
-.icons li:nth-child(2) {
-    animation-delay: 0.7s;
-}
-.icons li:nth-child(3) {
-    animation-delay: 0.9s;
-}
-
-/* Ensure icons are visible */
-.icons li a {
-    color: #fff; /* Set a contrasting color */
-    font-size: 50px; /* Increase icon size */
-    transition: color 0.3s;
-}
-
-.icons li a:hover {
-    color: #6482AD; /* Change color on hover */
-}
-
-
-h1, .icons {
-    position: relative;
-    /* You can also add a background color if needed */
-}
-.contact-section{
-    padding-top: 250px;
-}
-.education-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 1; /* Initially hidden */
-}
+/* =========================
+   EDUCATION
+========================= */
 
 .education-item {
     display: flex;
     align-items: center;
-    margin: 20px 0; /* Space between items */
-    width: 80%; /* Adjust width as needed */
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 .edu-logo {
-    font-size: 50px;
-    margin-right: 20px;
-    color: #071952; /* Logo color */
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+}
+
+.details h2 {
+    text-align: left;
+    font-size: 1.8rem;
 }
 
 .details h3 {
-    margin: 3px;
-    font-weight: 700;
-    font-size: 26px;
-    max-width: 600px; /* Limit details width */
-}
-.details h2 {
-    line-height: normal;
-    padding: 0;
-    font-size: 34px;
-    max-width: 600px; /* Limit details width */
-    margin: 3px;
-}
-.details p{
-    font-weight: 600;
-    margin: 3px;
-    font-size: 16px;
+    color: #475569;
 }
 
-.sub-headings {
-    font-size: 50px; /* Adjust heading size */
-    margin-bottom: 20px;
-    padding-top: 40px;
+.details p {
+    color: #64748b;
 }
+
+/* =========================
+   EXPERIENCE CARDS
+========================= */
 
 .experience-card {
-    border: 1px solid #ddd; /* Card border */
-    border-radius: 10px; /* Rounded corners */
-    max-width: 400px; /* Max width for the card */
-    margin: 20px auto; /* Centering the card */
-    overflow: hidden; /* Prevent content from overflowing */
-    position: relative; /* Required for absolute positioning */
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
 .card-header {
-    padding: 40px 0; /* Inner padding */
-    color: #fff; /* Text color */
-    text-align: center; /* Center text */
+    padding: 25px;
+    text-align: center;
 }
 
 .company-name {
-    color: #CCF2F4;
-    padding-bottom: 30px;
-    margin: 0; /* Remove default margin */
-    font-size: 50px; /* Company name font size */
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .logo-container {
-    padding-top: 30px;
     display: flex;
-    justify-content: center; /* Center logo */
-    position: absolute; /* Position it absolutely */
-    top: 80px; /* Adjust as needed to place it where the header ends */
-    left: 50%; /* Center the logo */
-    transform: translateX(-50%); /* Center it correctly */
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .company-logo {
-    width: 100px; /* Set width of the logo */
-    height: 100px; /* Set height of the logo */
-    border-radius: 50%; /* Make logo circular */
-    border: 2px solid #35A29F; /* Border color for the logo */
-    background-color: #fff; /* Optional: white background behind the logo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
-}
-.experience-card:hover {
-    transform: scale(1.05);
-    background-color: #1D5B4D; /* Change this color as needed */
-}
-.experience-text-details {
-    background-color: #fff; /* White background for details */
-    padding:20px; /* Inner padding for details */
-    text-align: left; /* Align text to the left */
-    color: #000; /* Brown color */
-
-}
-.experience-text-role{
-    margin-top: 70px !important;
-    font-size: 30px;
-
-}
-
-.experience-text-role,
-.experience-text-date {
-text-align: center;    margin: 10px 0; /* Space around text */
-    font-weight: bold; /* Bold text */
-    color: #00235B;
-
-    
-}
-
-.subTitle {
-    margin: 5px 0; /* Space around list items */
-    font-size: 30px; /* Font size for subtitle */
-}
-.content {
-    margin-bottom: 10px; /* Space between list items */
-}
-.exp-list{
-    
-    display: block;
-}
-/* General Container Styles */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Card Styles */
-  .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  .text-center{
-    font-size: 20px;
-    font-weight: 700;
-  }
-  
-  /* Header Styles */
-  .card-content h4 {
-    font-weight: 700;
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 50px;
-    color: #000; /* Brown color */
-  }
-  .left-list{
-    text-align: left;
-  }
-  
-  /* Image Styles */
-  .responsive-img {
     width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  .skill-text{
-    color: #272343;
-  }
-  /* Column Styles */
-  .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Hover Effect for Images */
-  .col img {
-    transition: transform 0.3s;
-  }
-  
-  .col img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Row Styles */
-  .row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .col {
-      flex: 1 1 40%; /* Adjusts columns for smaller screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .col {
-      flex: 1 1 100%; /* Stacks columns on very small screens */
-    }
-  }
-  
-  #large-header {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
 }
 
-#demo-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+.experience-text-details {
+    padding: 30px;
 }
-.project-section {
-    padding: 50px 0;
+
+.experience-text-role {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
 }
+
+.experience-text-date {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.exp-list {
+    padding-left: 20px;
+}
+
+.exp-list li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card-content h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.skill-text {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.responsive-img {
+    width: 80px;
+    transition: 0.3s ease;
+}
+
+.responsive-img:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   PROJECTS
+========================= */
 
 .project-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
-    margin: 20px;
-    overflow: hidden; /* Ensure contents do not overflow */
-    position: relative; /* For the glowing effect */
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    height: 100%;
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 40px rgb(23, 21, 59);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
 .project-image {
     width: 100%;
-    height: auto; /* Keep aspect ratio */
+    height: 250px;
+    object-fit: cover;
 }
 
 .project-details {
-    padding: 20px;
-    text-align: center; /* Center-align text */
+    padding: 25px;
 }
 
-.project-details h3 {
-    margin: 15px 0;
-    font-size: 24px; /* Adjust as needed */
+.project-heading {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
 }
 
 .project-details p {
-    font-size: 20px;
-    font-weight: 500;
-    color: #666; /* Lighter color for description */
+    color: #475569;
+    margin-bottom: 20px;
 }
 
 .project-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #021526; /* Button color */
+    padding: 12px 22px;
+    background: #0f172a;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    border-radius: 8px;
+    transition: 0.3s ease;
 }
-.project-heading{
-    font-size: 40px;
-    font-weight: 700;
-}
+
 .project-button:hover {
-color:#FFB1B1;    
-transform: scale(1.05); /* Slight zoom effect */
+    background: #38bdf8;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .custom-navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .sub-headings {
+        font-size: 2.3rem;
+    }
+
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details h2 {
+        text-align: center;
+    }
+
+    .project-image {
+        height: 200px;
+    }
 }
