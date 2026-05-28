@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Bhavya Sehgal</title>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav class="custom-navbar">
-            <ul id="list">
-                <li class="link">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
-    <section class="contact-section odd-section">
-        <h1>Contact Me</h1>
+    <section class="contact-page-section light-section">
 
-        <div>
-            <ul class="icons">
+        <p class="hero-badge">Get in Touch</p>
+        <h1>Contact</h1>
 
-                <li>
-                    <a href="https://www.linkedin.com/in/bhavya-sehgal/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
+        <p class="contact-intro">
+            I am open to research collaborations, academic discussions, and opportunities
+            in computer vision and machine learning. Feel free to reach out via any of
+            the channels below.
+        </p>
 
-                <li>
-                    <a href="https://github.com/BhavyaSehgal" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
+        <div class="contact-links">
 
-                <li>
-                    <a href="mailto:bhavya.ebox@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </li>
+            <a href="mailto:bsehgal1@ualberta.ca" class="contact-link-item">
+                <i class="fas fa-envelope"></i>
+                <span class="contact-link-label">bsehgal1@ualberta.ca</span>
+            </a>
 
-            </ul>
+            <a href="https://www.linkedin.com/in/bhavya-sehgal/" target="_blank" class="contact-link-item">
+                <i class="fab fa-linkedin"></i>
+                <span class="contact-link-label">linkedin.com/in/bhavya-sehgal</span>
+            </a>
+
+            <a href="https://github.com/bsehgal17" target="_blank" class="contact-link-item">
+                <i class="fab fa-github"></i>
+                <span class="contact-link-label">github.com/bsehgal17</span>
+            </a>
+
         </div>
+
     </section>
 
+    <script src="navbar.js"></script>
 </body>
+
 </html>

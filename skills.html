@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Bhavya Sehgal</title>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <nav class="custom-navbar">
-            <ul id="list">
-                <li class="link">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
-    <section class="skills-section odd-section">
-        <h1 class="sub-headings">Skills</h1>
+    <section class="skills-section light-section" id="skills">
 
-        <div class="container">
+        <h2 class="sub-headings">Technical Skills</h2>
 
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-content">
-                    <h4>Languages and Databases</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>R</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                    </ul>
+        <p class="skills-intro">
+            A summary of my technical toolkit spanning computer vision, machine learning,
+            biomedical imaging, and research software development.
+        </p>
+
+        <div class="skills-wrapper">
+
+            <div class="skills-block">
+                <h3>Programming Languages</h3>
+                <div class="skills-row">
+                    <span>Python</span>
+                    <span>R</span>
+                    <span>JavaScript</span>
+                    <span>C#</span>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <div class="card-content">
-                    <h4>Libraries</h4>
-                    <ul>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                        <li>OpenCV</li>
-                        <li>Scikit-Learn</li>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                    </ul>
+            <div class="skills-block">
+                <h3>Computer Vision & Deep Learning</h3>
+                <div class="skills-row">
+                    <span>PyTorch</span>
+                    <span>TensorFlow</span>
+                    <span>Keras</span>
+                    <span>OpenCV</span>
+                    <span>MONAI</span>
+                    <span>Scikit-Learn</span>
+                    <span>Scikit-Image</span>
+                    <span>Pose Estimation</span>
+                    <span>Object Detection</span>
+                    <span>Image Segmentation</span>
                 </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="card-content">
-                    <h4>Frameworks</h4>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>Keras</li>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>Unity3D</li>
-                    </ul>
+            <div class="skills-block">
+                <h3>Scientific Computing & Visualization</h3>
+                <div class="skills-row">
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>SciPy</span>
+                    <span>Matplotlib</span>
+                    <span>Plotly</span>
+                    <span>VTK</span>
                 </div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="card">
-                <div class="card-content">
-                    <h4>Other</h4>
-                    <ul>
-                        <li>Git</li>
-                        <li>VS Code</li>
-                        <li>Jupyter Notebooks</li>
-                        <li>Azure</li>
-                    </ul>
+            <div class="skills-block">
+                <h3>Cloud & Development Tools</h3>
+                <div class="skills-row">
+                    <span>AWS</span>
+                    <span>Azure</span>
+                    <span>Docker</span>
+                    <span>Git</span>
+                    <span>Jupyter</span>
+                    <span>VS Code</span>
+                    <span>PyCharm</span>
+                </div>
+            </div>
+
+            <div class="skills-block">
+                <h3>Web Technologies</h3>
+                <div class="skills-row">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                    <span>Drupal CMS</span>
                 </div>
             </div>
 
         </div>
+
     </section>
 
+    <script src="navbar.js"></script>
+
 </body>
+
 </html>

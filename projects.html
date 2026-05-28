@@ -1,80 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Bhavya Sehgal</title>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <nav class="custom-navbar">
-            <ul id="list">
-                <li class="link">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <header id="navbar-container"></header>
 
     <section class="project-section even-section">
-        <h1 class="sub-headings">Projects</h1>
+        <h2 class="sub-headings">Selected Projects</h2>
 
         <div class="container">
             <div class="row">
 
                 <!-- Project 1 -->
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="project-card">
-
                         <img src="img/projects/TreeLablel.jpg" class="project-image" alt="Tree Labeling Project">
-
                         <div class="project-details">
-                            <h3 class="project-heading">Tree Labeling</h3>
-                            <p>Orchard tree labeling using YOLOv4 and video-based tracking.</p>
-                            <a href="https://github.com/user/project1" class="project-button">View</a>
+                            <p class="project-tag">Computer Vision · Agriculture</p>
+                            <h3 class="project-heading">Tree Labeling via Pattern Recognition</h3>
+                            <p>Spatial labeling algorithm using YOLOv4 to uniquely identify orchard trees across video
+                                sequences. Applied centroid and dimensional analysis to minimize label reassignment
+                                across frames.</p>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-82475-3_1"
+                                class="project-button" target="_blank">View Paper</a>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="project-card">
-
                         <img src="img/projects/isosurface.png" class="project-image" alt="Ultrasound Visualization">
-
                         <div class="project-details">
+                            <p class="project-tag">Medical Imaging · Visualization</p>
                             <h3 class="project-heading">Ultrasound Visualization using VTK</h3>
-                            <p>Web-based visualization system for ultrasound data.</p>
-                            <a href="https://arxiv.org/abs/2304.14592" class="project-button">View</a>
+                            <p>VTK-based application for interactive visualization of 3D ultrasound data. Implemented
+                                image enhancement, isosurface extraction, and Delaunay triangulation for medical
+                                visualization workflows.</p>
+                            <a href="https://arxiv.org/abs/2304.14592" class="project-button" target="_blank">View
+                                Paper</a>
                         </div>
+                    </div>
+                </div>
 
+                <!-- Project 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <img src="img/projects/Protein.png" class="project-image" alt="Protein VR Visualization">
+                        <div class="project-details">
+                            <p class="project-tag">Bioinformatics · Virtual Reality</p>
+                            <h3 class="project-heading">Protein 3D Structure Visualization in VR</h3>
+                            <p>VR application built in Unity3D with Oculus Rift to visualize 3D protein structures
+                                predicted by AlphaFold 2. Converted 30 protein models from .pdb to .obj format using
+                                VMD and developed interactive navigation and selection features.</p>
+                            <a href="https://drive.google.com/file/d/1BUKHgfYWRm83RV9KStQxD-Bn8kkC0RXm/view?usp=drive_link"
+                                class="project-button" target="_blank">View Video</a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="project-card">
-
                         <img src="img/projects/RGBD.png" class="project-image" alt="RGBD Stylization Project">
-
                         <div class="project-details">
+                            <p class="project-tag">Computer Vision · Deep Learning</p>
                             <h3 class="project-heading">RGBD Image Stylization</h3>
-                            <p>Style transfer for RGB and depth images.</p>
-                            <a href="https://arxiv.org/abs/2305.06565" class="project-button">View</a>
+                            <p>Style transfer pipeline for RGB-D images combining appearance and depth information to
+                                produce geometrically consistent stylized outputs.</p>
+                            <a href="https://arxiv.org/abs/2305.06565" class="project-button" target="_blank">View
+                                Paper</a>
                         </div>
-
                     </div>
                 </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <img src="img/projects/liver_segmentation.PNG" class="project-image" alt="Liver Segmentation">
+                        <div class="project-details">
+                            <p class="project-tag">Biomedical Imaging · Segmentation</p>
+                            <h3 class="project-heading">Liver Segmentation &amp; Tumour Detection</h3>
+                            <p>PyTorch and MONAI-based pipeline for automated liver segmentation and tumour detection in
+                                medical imaging datasets. Optimized preprocessing and training strategies for improved
+                                inference efficiency.</p>
+                            <a href="https://github.com/BhavyaSehgal/Medical-imaging" class="project-button"
+                                target="_blank">View on Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <img src="img/projects/cattle_detection.png" class="project-image" alt="Cattle Detection">
+                        <div class="project-details">
+                            <p class="project-tag">Object Detection · Drone Imagery</p>
+                            <h3 class="project-heading">Cattle Detection under Occlusion</h3>
+                            <p>Evaluated multiple object detection algorithms on drone-captured cattle datasets under
+                                challenging occlusion conditions. YOLOv7 demonstrated superior performance over
+                                alternative frameworks.</p>
+                            <a href="https://arxiv.org/abs/2212.11418" class="project-button" target="_blank">View
+                                Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
         </div>
     </section>
 
+    <script src="navbar.js"></script>
 </body>
+
 </html>

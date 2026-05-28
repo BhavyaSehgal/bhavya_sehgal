@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Bhavya Sehgal</title>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="custom-navbar">
-        <ul id="list">
-            <li class="link"><a class="nav-link" href="index.html">Home</a></li>
-        </ul>
-    </nav>
-</header>
+    <header id="navbar-container"></header>
 
-<section class="about-section even-section">
+    <section class="about-section even-section">
 
-    <h2 class="sub-headings">About</h2>
+        <h2 class="sub-headings">About</h2>
 
-    <div class="container flow-text">
+        <div class="container flow-text">
 
-        <h2>
-            Hey! I’m Bhavya Sehgal from Edmonton, Alberta.
-            I’m currently pursuing a PhD in Computing Science
-            at the University of Alberta, specializing in
-            Computer Vision and Machine Learning.
-        </h2>
+            <p class="about-intro">
+                I am a PhD candidate in Computing Science at the University of Alberta,
+                working under the supervision of Dr. Irene Cheng. My research sits at the
+                intersection of computer vision and clinical healthcare, with a focus on
+                human pose estimation, motion analysis, and biomedical image processing.
+            </p>
 
-        <h2>
-            In addition to coding, I enjoy:
-        </h2>
+            <p class="about-body">
+                My doctoral work is supported through a Mitacs-funded collaboration with
+                Okaki, where I develop and validate pose-based computer vision pipelines
+                for quantitative gait and balance assessment from clinical video recordings.
+                This involves benchmarking state-of-the-art pose estimation frameworks —
+                including OpenPose, MediaPipe, and ViTPose — and evaluating their reliability
+                against gold-standard GaitRite mat equipment across diverse patient populations.
+            </p>
 
-        <ul class="left-list">
-            <li>Music across different genres</li>
-            <li>Horror and mystery movies</li>
-            <li>Drawing mandalas and zentangles</li>
-        </ul>
+            <p class="about-body">
+                Prior to my PhD, I completed an MSc in Computing Science (Multimedia) at the
+                University of Alberta with a CGPA of 3.7/4.0, and a BTech in Computer Science
+                and Engineering from Guru Nanak Dev University. I have also applied computer
+                vision methods to agricultural and industrial domains, including automated
+                orchard analysis and object detection for industrial inspection.
+            </p>
 
-    </div>
+            <div class="about-interests">
+                <h3 class="about-interests-heading">Research Interests</h3>
+                <ul class="interests-list">
+                    <li>Human Pose Estimation & Motion Analysis</li>
+                    <li>Biomedical Image Analysis & Medical Imaging</li>
+                    <li>Deep Learning for Healthcare Applications</li>
+                    <li>Object Detection & Scene Understanding</li>
+                </ul>
+            </div>
 
-</section>
+        </div>
 
+    </section>
+
+    <script src="navbar.js"></script>
 </body>
+
 </html>

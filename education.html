@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - Bhavya Sehgal</title>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="custom-navbar">
-        <ul id="list">
-            <li class="link"><a class="nav-link" href="index.html">Home</a></li>
-        </ul>
-    </nav>
-</header>
+    <header id="navbar-container"></header>
 
-<section class="education-section odd-section">
+    <section class="education-section light-section">
 
-    <h2 class="sub-headings">Education</h2>
+        <h2 class="sub-headings">Education</h2>
 
-    <div class="education-item">
-        <img class="edu-logo" src="img/education/UOA.png">
+        <div class="education-item">
+            <img class="edu-logo" src="img/education/UOA.png" alt="University of Alberta">
 
-        <div class="details">
-            <h2>PhD - Computing Science</h2>
-            <h3>University of Alberta</h3>
-            <p>Sep 2024 - Present</p>
+            <div class="details">
+                <h2>PhD — Computing Science</h2>
+                <h3>University of Alberta, Edmonton, AB</h3>
+                <p class="edu-focus">Specialization: Computer Vision &amp; Machine Learning</p>
+                <p class="edu-supervisor">Supervisor: Dr. Irene Cheng</p>
+                <p class="edu-date">Sep 2024 – Present</p>
+            </div>
         </div>
-    </div>
 
-    <div class="education-item">
-        <img class="edu-logo" src="img/education/UOA.png">
+        <div class="education-item">
+            <img class="edu-logo" src="img/education/UOA.png" alt="University of Alberta">
 
-        <div class="details">
-            <h2>Master of Science - Computing Science</h2>
-            <h3>University of Alberta</h3>
-            <h3>CGPA: 3.7/4.0</h3>
-            <p>Sep 2022 - Dec 2023</p>
+            <div class="details">
+                <h2>Master of Science — Computing Science (Multimedia)</h2>
+                <h3>University of Alberta, Edmonton, AB</h3>
+                <p class="edu-focus">Course-based program with focus on Computer Vision , Image and video Processing
+                    , virtual and augmented reality &amp; Machine Learning</p>
+                <p class="edu-gpa">CGPA: 3.7 / 4.0</p>
+                <p class="edu-date">Sep 2022 – Dec 2023</p>
+            </div>
         </div>
-    </div>
 
-</section>
+        <div class="education-item">
+            <img class="edu-logo" src="img/education/GNDU.png" alt="Guru Nanak Dev University">
 
+            <div class="details">
+                <h2>Bachelor of Technology — Computer Science &amp; Engineering</h2>
+                <h3>Guru Nanak Dev University, Amritsar, India</h3>
+                <p class="edu-gpa">CGPA: 8.83 / 10</p>
+                <p class="edu-date">Jul 2018 – Jul 2022</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="navbar.js"></script>
 </body>
+
 </html>
